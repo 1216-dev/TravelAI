@@ -15,31 +15,41 @@ The frontend is architected as a single-page Streamlit application. Unlike tradi
 
 ### 2.1. High-Level Architectural Flowchart
 
-This diagram illustrates the flow of data and control from the user's interaction with the UI to the final display of the itinerary.
+Step 1: User Interaction and Data Collection
 
-```mermaid
-graph TD
-    A[User Interacts with UI <br/>(app.py)] --> B{Sidebar Form};
-    B -- Fill & Submit --> C{Build Request Object};
-    C -- Dict --> D[process_travel_request() function];
-    D -- Instantiate & Call --> E{Backend: TravelPlannerPipeline};
-    E -- Progress Callback --> F[update_progress() function];
-    F -- Update UI --> G[Progress Bar & Status Text];
-    E -- Return Result --> H{Store in Session State <br/>(st.session_state.result)};
-    H -- Data --> I{Render Results View};
-    
-    subgraph "UI Components (components/)"
-        I --> J[itinerary_display.py];
-        I --> K[pdf_download.py];
-        I --> L[feedback_form.py];
-    end
+    A [User Interacts with UI (app.py)] starts the process.
 
-    style B fill:#e3f2fd,stroke:#333,stroke-width:2px
-    style D fill:#e3f2fd,stroke:#333,stroke-width:2px
-    style E fill:#c8e6c9,stroke:#333,stroke-width:2px
-    style H fill:#fff9c4,stroke:#333,stroke-width:2px
-```
+    The user provides their requirements in the B {Sidebar Form}.
 
+    Upon submission (Fill & Submit), the application logic is triggered to C {Build Request Object}.
+
+    The request is built into a structured Dict and passed to the D [process_travel_request() function].
+
+Step 2: Backend Processing and Progress Tracking
+
+    The process_travel_request() function initiates the core logic by an Instantiate & Call operation to the backend.
+
+    The request is handled by the E {Backend: TravelPlannerPipeline} (the multi-agent system described previously).
+
+    As the backend pipeline executes, it sends a Progress Callback to the F [update_progress() function].
+
+    This function updates the G [Progress Bar & Status Text] on the UI, giving the user real-time feedback.
+
+Step 3: Result Handling and Display
+
+    Once the pipeline completes, the backend returns the Return Result (the final itinerary data).
+
+    The result is placed into the H {Store in Session State (st.session_state.result)} for persistence and access across the application.
+
+    The presence of the final Data in the session state triggers the I {Render Results View}.
+
+    The Results View orchestrates the rendering of specialized UI Components from the components/ subgraph, including:
+
+        J [itinerary_display.py]: Displays the main day-by-day travel plan.
+
+        K [pdf_download.py]: Provides the link or button to access the generated PDF.
+
+        L [feedback_form.py]: Presents a form for user feedback on the generated itinerary.
 ---
 
 ## 3. Deep Dive: Data Flow and Backend Communication
