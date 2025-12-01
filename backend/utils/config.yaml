@@ -1,0 +1,130 @@
+# AI Travel Planner Configuration
+
+# Model Configuration
+models:
+  orchestrator:
+    name: "meta-llama/Llama-2-7b-chat-hf"
+    max_tokens: 2048
+    temperature: 0.7
+    use_local: true  # Set to false if using API
+  
+  gnn:
+    hidden_dim: 128
+    num_layers: 3
+    dropout: 0.2
+    learning_rate: 0.001
+
+# API Configuration
+apis:
+  # Flight APIs
+  flight:
+    enabled: true  # Real API enabled
+    provider: "serpapi"
+    timeout: 30
+    mock_fallback: true
+  
+  # Hotel APIs
+  hotel:
+    enabled: true  # Real API enabled
+    provider: "serpapi"
+    timeout: 30
+    mock_fallback: true
+  
+  # Weather APIs
+  weather:
+    enabled: true  # Real API enabled
+    provider: "openweathermap"
+    timeout: 10
+    mock_fallback: true
+  
+  # Activities/POI APIs
+  activities:
+    enabled: true  # Real API enabled
+    provider: "osm_nominatim"  # osm_nominatim (NO KEY!), yelp, foursquare
+    timeout: 15
+    mock_fallback: true
+    
+    # OSM Nominatim + Wikipedia (100% FREE, NO KEY!)
+    osm_nominatim:
+      radius: 10000  # Search radius in meters (10km)
+      rate_limit: 1  # 1 request per second (respectful use)
+      search_types: "tourism,historic,natural,leisure,amenity"
+      user_agent: "Travelopedia/1.0"  # Required by Nominatim
+    
+    # Yelp Fusion API config (optional)
+    yelp:
+      radius: 10000
+      rate_limit: 5000
+      categories: "arts,active,food,nightlife,shopping"
+      limit: 50
+    
+    # OpenTripMap config (requires API key now)
+    opentripmap:
+      radius: 10000
+      rate_limit: "limited"
+      kinds: "interesting_places,museums,churches,theatres,archaeological_sites,monuments,beaches,nature_reserves"
+
+
+# Budget Configuration
+budget:
+  categories:
+    - transport
+    - accommodation
+    - food
+    - activities
+    - miscellaneous
+  
+  comfort_levels:
+    budget: 1.0
+    standard: 1.5
+    comfort: 2.0
+    luxury: 3.0
+  
+  default_allocation:
+    transport: 0.35
+    accommodation: 0.35
+    food: 0.15
+    activities: 0.10
+    miscellaneous: 0.05
+
+# Personalization Configuration
+personalization:
+  preference_categories:
+    - adventure
+    - luxury
+    - nature
+    - cultural
+    - culinary
+    - relaxation
+    - family_friendly
+    - romantic
+  
+  user_embedding_dim: 64
+  min_similarity_threshold: 0.6
+
+# Constraint Validation
+constraints:
+  min_trip_duration_days: 1
+  max_trip_duration_days: 30
+  min_budget: 100
+  max_budget: 100000
+  advance_booking_days: 0  # Minimum days in advance
+  
+# Logging Configuration
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: "logs/travel_planner.log"
+
+# Output Configuration
+output:
+  itinerary_format: "pdf"  # pdf, json, both
+  include_map: true
+  include_weather: true
+  max_alternatives: 3
+
+# Cache Configuration
+cache:
+  enabled: true
+  ttl_seconds: 3600  # 1 hour
+  max_size_mb: 100

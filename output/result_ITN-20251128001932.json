@@ -1,0 +1,1777 @@
+{
+  "success": true,
+  "request_id": "REQ-20251128001928",
+  "errors": [],
+  "warnings": [
+    "Booking with less than 2 weeks advance may result in higher prices"
+  ],
+  "data": {
+    "itinerary": {
+      "itinerary_id": "ITN-20251128001932",
+      "user_id": "user_12345",
+      "generated_at": "2025-11-28T00:19:32.409783",
+      "trip_summary": {
+        "destination": "Bali, Indonesia",
+        "origin": "New York, USA",
+        "dates": {
+          "start": "2025-12-01",
+          "end": "2025-12-06"
+        },
+        "duration_days": 5,
+        "group_size": 2
+      },
+      "budget_summary": {
+        "total_budget": 2500,
+        "total_cost": 1946.6203703703704,
+        "balance": 553.3796296296296,
+        "breakdown": {
+          "transport": 770.0,
+          "accommodation": 656.25,
+          "activities": 150,
+          "food": 277.77777777777777,
+          "miscellaneous": 92.59259259259258
+        }
+      },
+      "transportation": {
+        "outbound_flight": {
+          "total_price": 770.0,
+          "travel_class": "Standard",
+          "carbon_emissions": 855,
+          "airline": "United Airlines",
+          "airline_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/United_Airlines_Logo.svg/512px-United_Airlines_Logo.svg.png",
+          "flight_number": "MOCK-UNI-2",
+          "price": 770.0,
+          "cabin_class": "Standard",
+          "booking_url": "",
+          "outbound": {
+            "date": "2025-12-01",
+            "airline": "United Airlines",
+            "flight_number": "UN465",
+            "duration_hours": 8.0,
+            "stops": 1,
+            "departure": {
+              "airport": "JFK",
+              "time": "12:20"
+            },
+            "arrival": {
+              "airport": "DPS",
+              "time": "20:05"
+            },
+            "layovers": [
+              "Reykjavik"
+            ]
+          },
+          "return": {
+            "date": "2025-12-06",
+            "airline": "United Airlines",
+            "flight_number": "UN786",
+            "duration_hours": 8.4,
+            "stops": 1,
+            "departure": {
+              "airport": "DPS",
+              "time": "14:35"
+            },
+            "arrival": {
+              "airport": "JFK",
+              "time": "23:10"
+            },
+            "layovers": [
+              "Dublin"
+            ]
+          },
+          "departure": {
+            "airport": "JFK",
+            "time": "12:20"
+          },
+          "arrival": {
+            "airport": "DPS",
+            "time": "20:05"
+          },
+          "duration_hours": 8.0,
+          "stops": 1,
+          "layovers": [
+            "Reykjavik"
+          ]
+        },
+        "return_flight": null
+      },
+      "accommodation": {
+        "name": "Traveler's Loft",
+        "rating": 3.9,
+        "type": "Hotel",
+        "location": {
+          "address": "Bali, Indonesia City Center",
+          "coordinates": {
+            "lat": 0.0,
+            "lng": 0.0
+          }
+        },
+        "room_type": "Queen with breakfast",
+        "price": {
+          "per_night": 131.25,
+          "total": 656.25,
+          "nights": 5,
+          "currency": "USD"
+        },
+        "amenities": [
+          "WiFi",
+          "Breakfast",
+          "Late Checkout",
+          "Gym"
+        ],
+        "policies": {
+          "cancellation": "Free cancellation up to 24h before check-in"
+        }
+      },
+      "activities": [
+        {
+          "name": "D' Alas Ekowisata",
+          "category": "nature",
+          "description": "Viewpoint in Bali, Indonesia.",
+          "duration_hours": 1,
+          "price": 15,
+          "rating": 4.8,
+          "best_time": "Afternoon"
+        },
+        {
+          "name": "Cok Camp",
+          "category": "cultural",
+          "description": "Attraction in Bali, Indonesia.",
+          "duration_hours": 2,
+          "price": 10,
+          "rating": 4.7,
+          "best_time": "Full Day"
+        },
+        {
+          "name": "Monumen Panji Sakti",
+          "category": "cultural",
+          "description": "Historic Site in Bali, Indonesia.",
+          "duration_hours": 2,
+          "price": 10,
+          "rating": 4.7,
+          "best_time": "Afternoon"
+        },
+        {
+          "name": "Nice HomeStay",
+          "category": "cultural",
+          "description": "Attraction in Bali, Indonesia.",
+          "duration_hours": 2,
+          "price": 10,
+          "rating": 4.6,
+          "best_time": "Full Day"
+        },
+        {
+          "name": "Above sky view",
+          "category": "nature",
+          "description": "Viewpoint in Bali, Indonesia.",
+          "duration_hours": 1,
+          "price": 10,
+          "rating": 4.6,
+          "best_time": "Afternoon"
+        },
+        {
+          "name": "Campsite place",
+          "category": "cultural",
+          "description": "Attraction in Bali, Indonesia.",
+          "duration_hours": 2,
+          "price": 10,
+          "rating": 4.6,
+          "best_time": "Full Day"
+        },
+        {
+          "name": "Rice Terrace",
+          "category": "nature",
+          "description": "Viewpoint in Bali, Indonesia.",
+          "duration_hours": 1,
+          "price": 10,
+          "rating": 4.6,
+          "best_time": "Full Day"
+        },
+        {
+          "name": "Handara Gate",
+          "category": "cultural",
+          "description": "Historic Site in Bali, Indonesia.",
+          "duration_hours": 2,
+          "price": 25,
+          "rating": 4.5,
+          "best_time": "Morning"
+        },
+        {
+          "name": "Hillside Guest House",
+          "category": "cultural",
+          "description": "Attraction in Bali, Indonesia.",
+          "duration_hours": 2,
+          "price": 25,
+          "rating": 4.4,
+          "best_time": "Morning"
+        },
+        {
+          "name": "Donk losog bedugul",
+          "category": "cultural",
+          "description": "Attraction in Bali, Indonesia.",
+          "duration_hours": 2,
+          "price": 25,
+          "rating": 4.4,
+          "best_time": "Afternoon"
+        }
+      ],
+      "weather_forecast": [
+        {
+          "date": "2025-12-01",
+          "location": "Bali, Indonesia",
+          "condition": "Stormy",
+          "temperature": {
+            "current": 25.6,
+            "high": 27.9,
+            "low": 21.9,
+            "unit": "\u00b0C"
+          },
+          "humidity": 73,
+          "wind_speed": 20.4,
+          "precipitation_chance": 6,
+          "uv_index": 3,
+          "sunrise": "06:30 AM",
+          "sunset": "18:30 PM",
+          "icon": "\u26c5"
+        },
+        {
+          "date": "2025-12-02",
+          "location": "Bali, Indonesia",
+          "condition": "Sunny",
+          "temperature": {
+            "current": 17.4,
+            "high": 29.6,
+            "low": 20.7,
+            "unit": "\u00b0C"
+          },
+          "humidity": 64,
+          "wind_speed": 5.9,
+          "precipitation_chance": 24,
+          "uv_index": 3,
+          "sunrise": "06:30 AM",
+          "sunset": "18:30 PM",
+          "icon": "\u2600\ufe0f"
+        },
+        {
+          "date": "2025-12-03",
+          "location": "Bali, Indonesia",
+          "condition": "Partly Cloudy",
+          "temperature": {
+            "current": 24.0,
+            "high": 31.5,
+            "low": 19.6,
+            "unit": "\u00b0C"
+          },
+          "humidity": 69,
+          "wind_speed": 9.3,
+          "precipitation_chance": 17,
+          "uv_index": 7,
+          "sunrise": "06:30 AM",
+          "sunset": "18:30 PM",
+          "icon": "\u2600\ufe0f"
+        },
+        {
+          "date": "2025-12-04",
+          "location": "Bali, Indonesia",
+          "condition": "Stormy",
+          "temperature": {
+            "current": 24.9,
+            "high": 27.4,
+            "low": 17.4,
+            "unit": "\u00b0C"
+          },
+          "humidity": 78,
+          "wind_speed": 28.8,
+          "precipitation_chance": 86,
+          "uv_index": 5,
+          "sunrise": "06:30 AM",
+          "sunset": "18:30 PM",
+          "icon": "\u2600\ufe0f"
+        },
+        {
+          "date": "2025-12-05",
+          "location": "Bali, Indonesia",
+          "condition": "Rainy",
+          "temperature": {
+            "current": 21.6,
+            "high": 30.1,
+            "low": 17.6,
+            "unit": "\u00b0C"
+          },
+          "humidity": 56,
+          "wind_speed": 25.9,
+          "precipitation_chance": 67,
+          "uv_index": 6,
+          "sunrise": "06:30 AM",
+          "sunset": "18:30 PM",
+          "icon": "\u26c5"
+        },
+        {
+          "date": "2025-12-06",
+          "location": "Bali, Indonesia",
+          "condition": "Sunny",
+          "temperature": {
+            "current": 25.3,
+            "high": 29.9,
+            "low": 18.0,
+            "unit": "\u00b0C"
+          },
+          "humidity": 49,
+          "wind_speed": 28.1,
+          "precipitation_chance": 67,
+          "uv_index": 3,
+          "sunrise": "06:30 AM",
+          "sunset": "18:30 PM",
+          "icon": "\u2600\ufe0f"
+        }
+      ],
+      "daily_schedule": [
+        {
+          "day": 1,
+          "date": "2025-12-01",
+          "day_of_week": "Monday",
+          "weather": {
+            "date": "2025-12-01",
+            "location": "Bali, Indonesia",
+            "condition": "Stormy",
+            "temperature": {
+              "current": 25.6,
+              "high": 27.9,
+              "low": 21.9,
+              "unit": "\u00b0C"
+            },
+            "humidity": 73,
+            "wind_speed": 20.4,
+            "precipitation_chance": 6,
+            "uv_index": 3,
+            "sunrise": "06:30 AM",
+            "sunset": "18:30 PM",
+            "icon": "\u26c5"
+          },
+          "events": [
+            {
+              "time": "08:00",
+              "activity": "Breakfast"
+            },
+            {
+              "time": "09:00",
+              "activity": "Check-in / Start exploring"
+            },
+            {
+              "time": "10:00",
+              "activity": "D' Alas Ekowisata"
+            },
+            {
+              "time": "13:00",
+              "activity": "Cok Camp"
+            },
+            {
+              "time": "21:00",
+              "activity": "Dinner & Leisure"
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "date": "2025-12-02",
+          "day_of_week": "Tuesday",
+          "weather": {
+            "date": "2025-12-02",
+            "location": "Bali, Indonesia",
+            "condition": "Sunny",
+            "temperature": {
+              "current": 17.4,
+              "high": 29.6,
+              "low": 20.7,
+              "unit": "\u00b0C"
+            },
+            "humidity": 64,
+            "wind_speed": 5.9,
+            "precipitation_chance": 24,
+            "uv_index": 3,
+            "sunrise": "06:30 AM",
+            "sunset": "18:30 PM",
+            "icon": "\u2600\ufe0f"
+          },
+          "events": [
+            {
+              "time": "08:00",
+              "activity": "Breakfast"
+            },
+            {
+              "time": "09:00",
+              "activity": "Check-in / Start exploring"
+            },
+            {
+              "time": "10:00",
+              "activity": "Monumen Panji Sakti"
+            },
+            {
+              "time": "13:00",
+              "activity": "Nice HomeStay"
+            },
+            {
+              "time": "21:00",
+              "activity": "Dinner & Leisure"
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "date": "2025-12-03",
+          "day_of_week": "Wednesday",
+          "weather": {
+            "date": "2025-12-03",
+            "location": "Bali, Indonesia",
+            "condition": "Partly Cloudy",
+            "temperature": {
+              "current": 24.0,
+              "high": 31.5,
+              "low": 19.6,
+              "unit": "\u00b0C"
+            },
+            "humidity": 69,
+            "wind_speed": 9.3,
+            "precipitation_chance": 17,
+            "uv_index": 7,
+            "sunrise": "06:30 AM",
+            "sunset": "18:30 PM",
+            "icon": "\u2600\ufe0f"
+          },
+          "events": [
+            {
+              "time": "08:00",
+              "activity": "Breakfast"
+            },
+            {
+              "time": "09:00",
+              "activity": "Check-in / Start exploring"
+            },
+            {
+              "time": "10:00",
+              "activity": "Above sky view"
+            },
+            {
+              "time": "13:00",
+              "activity": "Campsite place"
+            },
+            {
+              "time": "21:00",
+              "activity": "Dinner & Leisure"
+            }
+          ]
+        },
+        {
+          "day": 4,
+          "date": "2025-12-04",
+          "day_of_week": "Thursday",
+          "weather": {
+            "date": "2025-12-04",
+            "location": "Bali, Indonesia",
+            "condition": "Stormy",
+            "temperature": {
+              "current": 24.9,
+              "high": 27.4,
+              "low": 17.4,
+              "unit": "\u00b0C"
+            },
+            "humidity": 78,
+            "wind_speed": 28.8,
+            "precipitation_chance": 86,
+            "uv_index": 5,
+            "sunrise": "06:30 AM",
+            "sunset": "18:30 PM",
+            "icon": "\u2600\ufe0f"
+          },
+          "events": [
+            {
+              "time": "08:00",
+              "activity": "Breakfast"
+            },
+            {
+              "time": "09:00",
+              "activity": "Check-in / Start exploring"
+            },
+            {
+              "time": "10:00",
+              "activity": "Rice Terrace"
+            },
+            {
+              "time": "13:00",
+              "activity": "Handara Gate"
+            },
+            {
+              "time": "21:00",
+              "activity": "Dinner & Leisure"
+            }
+          ]
+        },
+        {
+          "day": 5,
+          "date": "2025-12-05",
+          "day_of_week": "Friday",
+          "weather": {
+            "date": "2025-12-05",
+            "location": "Bali, Indonesia",
+            "condition": "Rainy",
+            "temperature": {
+              "current": 21.6,
+              "high": 30.1,
+              "low": 17.6,
+              "unit": "\u00b0C"
+            },
+            "humidity": 56,
+            "wind_speed": 25.9,
+            "precipitation_chance": 67,
+            "uv_index": 6,
+            "sunrise": "06:30 AM",
+            "sunset": "18:30 PM",
+            "icon": "\u26c5"
+          },
+          "events": [
+            {
+              "time": "08:00",
+              "activity": "Breakfast"
+            },
+            {
+              "time": "09:00",
+              "activity": "Check-in / Start exploring"
+            },
+            {
+              "time": "10:00",
+              "activity": "Hillside Guest House"
+            },
+            {
+              "time": "13:00",
+              "activity": "Donk losog bedugul"
+            },
+            {
+              "time": "21:00",
+              "activity": "Dinner & Leisure"
+            }
+          ]
+        }
+      ],
+      "recommendations": [
+        "\ud83d\udca1 Book flights and hotels as soon as possible for best rates",
+        "\ud83d\udcf1 Download offline maps of your destination",
+        "\ud83d\udcb3 Notify your bank about international travel",
+        "\ud83e\ude79 Pack a basic first-aid kit",
+        "\ud83d\udcf8 Don't forget travel adapters for your electronics",
+        "\ud83d\udcb0 You have budget surplus - consider upgrading accommodation or adding activities"
+      ],
+      "value_score": 76.88
+    },
+    "alternatives": [
+      {
+        "total_budget": 2500,
+        "total_cost": 2076.25,
+        "balance": 423.75,
+        "allocation": {
+          "transport": 875.0,
+          "accommodation": 875.0,
+          "food": 375.0,
+          "activities": 250.0,
+          "miscellaneous": 125.0
+        },
+        "actual_costs": {
+          "transport": 770.0,
+          "accommodation": 656.25,
+          "activities": 150,
+          "food": 375.0,
+          "miscellaneous": 125.0
+        },
+        "selected_options": {
+          "flight": {
+            "flight_id": "MOCK-UNI-2",
+            "airline": "United Airlines",
+            "airline_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/United_Airlines_Logo.svg/512px-United_Airlines_Logo.svg.png",
+            "price": 770.0,
+            "total_price": 770.0,
+            "data_source": "mock",
+            "fallback_reason": "serp_api_unavailable_or_empty",
+            "travel_class": "Standard",
+            "carbon_emissions": 855,
+            "booking_url": "",
+            "outbound": {
+              "date": "2025-12-01",
+              "airline": "United Airlines",
+              "flight_number": "UN465",
+              "duration_hours": 8.0,
+              "stops": 1,
+              "departure": {
+                "airport": "JFK",
+                "time": "12:20"
+              },
+              "arrival": {
+                "airport": "DPS",
+                "time": "20:05"
+              },
+              "layovers": [
+                "Reykjavik"
+              ]
+            },
+            "return": {
+              "date": "2025-12-06",
+              "airline": "United Airlines",
+              "flight_number": "UN786",
+              "duration_hours": 8.4,
+              "stops": 1,
+              "departure": {
+                "airport": "DPS",
+                "time": "14:35"
+              },
+              "arrival": {
+                "airport": "JFK",
+                "time": "23:10"
+              },
+              "layovers": [
+                "Dublin"
+              ]
+            },
+            "value_score": 0.8479999999999999
+          },
+          "hotel": {
+            "name": "Traveler's Loft",
+            "rating": 3.9,
+            "data_source": "mock",
+            "type": "Hotel",
+            "location": {
+              "address": "Bali, Indonesia City Center",
+              "coordinates": {
+                "lat": 0.0,
+                "lng": 0.0
+              }
+            },
+            "room_type": "Queen with breakfast",
+            "price": {
+              "per_night": 131.25,
+              "total": 656.25,
+              "nights": 5,
+              "currency": "USD"
+            },
+            "amenities": [
+              "WiFi",
+              "Breakfast",
+              "Late Checkout",
+              "Gym"
+            ],
+            "policies": {
+              "cancellation": "Free cancellation up to 24h before check-in"
+            },
+            "value_score": 6.11764705882353
+          },
+          "activities": [
+            {
+              "activity_id": "OSM6114569750",
+              "name": "D' Alas Ekowisata",
+              "type": "Viewpoint",
+              "category": "nature",
+              "description": "Viewpoint in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.256995,
+                  "lng": 115.2275379
+                }
+              },
+              "rating": 4.8,
+              "price_level": 2,
+              "price": 15,
+              "duration_hours": 1,
+              "best_time": "Afternoon",
+              "tags": [
+                "viewpoint",
+                "",
+                "",
+                ""
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6186048555652885
+            },
+            {
+              "activity_id": "OSM9429846867",
+              "name": "Cok Camp",
+              "type": "Attraction",
+              "category": "cultural",
+              "description": "Attraction in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.2636978,
+                  "lng": 115.1784382
+                }
+              },
+              "rating": 4.7,
+              "price_level": 2,
+              "price": 10,
+              "duration_hours": 2,
+              "best_time": "Full Day",
+              "tags": [
+                "camp_site",
+                "",
+                "",
+                ""
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6125093358255855
+            },
+            {
+              "activity_id": "OSM12061155961",
+              "name": "Monumen Panji Sakti",
+              "type": "Historic Site",
+              "category": "cultural",
+              "description": "Historic Site in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.2309558,
+                  "lng": 115.1501212
+                }
+              },
+              "rating": 4.7,
+              "price_level": 2,
+              "price": 10,
+              "duration_hours": 2,
+              "best_time": "Afternoon",
+              "tags": [
+                "",
+                "",
+                "",
+                "monument"
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6125093358255855
+            },
+            {
+              "activity_id": "OSM5601204121",
+              "name": "Nice HomeStay",
+              "type": "Attraction",
+              "category": "cultural",
+              "description": "Attraction in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.1810504,
+                  "lng": 115.1880181
+                }
+              },
+              "rating": 4.6,
+              "price_level": 2,
+              "price": 10,
+              "duration_hours": 2,
+              "best_time": "Full Day",
+              "tags": [
+                "hostel",
+                "",
+                "",
+                ""
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6063970718975191
+            },
+            {
+              "activity_id": "OSM5853750587",
+              "name": "Above sky view",
+              "type": "Viewpoint",
+              "category": "nature",
+              "description": "Viewpoint in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.2559449,
+                  "lng": 115.1901248
+                }
+              },
+              "rating": 4.6,
+              "price_level": 2,
+              "price": 10,
+              "duration_hours": 1,
+              "best_time": "Afternoon",
+              "tags": [
+                "viewpoint",
+                "",
+                "",
+                ""
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6063970718975191
+            },
+            {
+              "activity_id": "OSM5853751385",
+              "name": "Campsite place",
+              "type": "Attraction",
+              "category": "cultural",
+              "description": "Attraction in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.2551824,
+                  "lng": 115.1900513
+                }
+              },
+              "rating": 4.6,
+              "price_level": 2,
+              "price": 10,
+              "duration_hours": 2,
+              "best_time": "Full Day",
+              "tags": [
+                "camp_site",
+                "",
+                "",
+                ""
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6063970718975191
+            },
+            {
+              "activity_id": "OSM12248424005",
+              "name": "Rice Terrace",
+              "type": "Viewpoint",
+              "category": "nature",
+              "description": "Viewpoint in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.18242,
+                  "lng": 115.1831819
+                }
+              },
+              "rating": 4.6,
+              "price_level": 2,
+              "price": 10,
+              "duration_hours": 1,
+              "best_time": "Full Day",
+              "tags": [
+                "viewpoint",
+                "",
+                "",
+                ""
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6063970718975191
+            },
+            {
+              "activity_id": "OSM5273128322",
+              "name": "Handara Gate",
+              "type": "Historic Site",
+              "category": "cultural",
+              "description": "Historic Site in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.2530654,
+                  "lng": 115.1583197
+                }
+              },
+              "rating": 4.5,
+              "price_level": 2,
+              "price": 25,
+              "duration_hours": 2,
+              "best_time": "Morning",
+              "tags": [
+                "",
+                "",
+                "",
+                "monument"
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6002668598376246
+            },
+            {
+              "activity_id": "OSM5052509468",
+              "name": "Hillside Guest House",
+              "type": "Attraction",
+              "category": "cultural",
+              "description": "Attraction in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.2091807,
+                  "lng": 115.1718503
+                }
+              },
+              "rating": 4.4,
+              "price_level": 2,
+              "price": 25,
+              "duration_hours": 2,
+              "best_time": "Morning",
+              "tags": [
+                "guest_house",
+                "",
+                "",
+                ""
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.5941174200069459
+            },
+            {
+              "activity_id": "OSM7221564786",
+              "name": "Donk losog bedugul",
+              "type": "Attraction",
+              "category": "cultural",
+              "description": "Attraction in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.2737157,
+                  "lng": 115.1608651
+                }
+              },
+              "rating": 4.4,
+              "price_level": 2,
+              "price": 25,
+              "duration_hours": 2,
+              "best_time": "Afternoon",
+              "tags": [
+                "camp_site",
+                "",
+                "",
+                ""
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.5941174200069459
+            }
+          ]
+        },
+        "comfort_level": "budget",
+        "value_score": 76.88,
+        "label": "Budget",
+        "description": "Maximize savings with essential amenities"
+      },
+      {
+        "total_budget": 2500,
+        "total_cost": 1946.6203703703704,
+        "balance": 553.3796296296296,
+        "allocation": {
+          "transport": 972.2222222222222,
+          "accommodation": 972.2222222222222,
+          "food": 277.77777777777777,
+          "activities": 185.18518518518516,
+          "miscellaneous": 92.59259259259258
+        },
+        "actual_costs": {
+          "transport": 770.0,
+          "accommodation": 656.25,
+          "activities": 150,
+          "food": 277.77777777777777,
+          "miscellaneous": 92.59259259259258
+        },
+        "selected_options": {
+          "flight": {
+            "flight_id": "MOCK-UNI-2",
+            "airline": "United Airlines",
+            "airline_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/United_Airlines_Logo.svg/512px-United_Airlines_Logo.svg.png",
+            "price": 770.0,
+            "total_price": 770.0,
+            "data_source": "mock",
+            "fallback_reason": "serp_api_unavailable_or_empty",
+            "travel_class": "Standard",
+            "carbon_emissions": 855,
+            "booking_url": "",
+            "outbound": {
+              "date": "2025-12-01",
+              "airline": "United Airlines",
+              "flight_number": "UN465",
+              "duration_hours": 8.0,
+              "stops": 1,
+              "departure": {
+                "airport": "JFK",
+                "time": "12:20"
+              },
+              "arrival": {
+                "airport": "DPS",
+                "time": "20:05"
+              },
+              "layovers": [
+                "Reykjavik"
+              ]
+            },
+            "return": {
+              "date": "2025-12-06",
+              "airline": "United Airlines",
+              "flight_number": "UN786",
+              "duration_hours": 8.4,
+              "stops": 1,
+              "departure": {
+                "airport": "DPS",
+                "time": "14:35"
+              },
+              "arrival": {
+                "airport": "JFK",
+                "time": "23:10"
+              },
+              "layovers": [
+                "Dublin"
+              ]
+            },
+            "value_score": 0.8479999999999999
+          },
+          "hotel": {
+            "name": "Traveler's Loft",
+            "rating": 3.9,
+            "data_source": "mock",
+            "type": "Hotel",
+            "location": {
+              "address": "Bali, Indonesia City Center",
+              "coordinates": {
+                "lat": 0.0,
+                "lng": 0.0
+              }
+            },
+            "room_type": "Queen with breakfast",
+            "price": {
+              "per_night": 131.25,
+              "total": 656.25,
+              "nights": 5,
+              "currency": "USD"
+            },
+            "amenities": [
+              "WiFi",
+              "Breakfast",
+              "Late Checkout",
+              "Gym"
+            ],
+            "policies": {
+              "cancellation": "Free cancellation up to 24h before check-in"
+            },
+            "value_score": 6.11764705882353
+          },
+          "activities": [
+            {
+              "activity_id": "OSM6114569750",
+              "name": "D' Alas Ekowisata",
+              "type": "Viewpoint",
+              "category": "nature",
+              "description": "Viewpoint in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.256995,
+                  "lng": 115.2275379
+                }
+              },
+              "rating": 4.8,
+              "price_level": 2,
+              "price": 15,
+              "duration_hours": 1,
+              "best_time": "Afternoon",
+              "tags": [
+                "viewpoint",
+                "",
+                "",
+                ""
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6186048555652885
+            },
+            {
+              "activity_id": "OSM9429846867",
+              "name": "Cok Camp",
+              "type": "Attraction",
+              "category": "cultural",
+              "description": "Attraction in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.2636978,
+                  "lng": 115.1784382
+                }
+              },
+              "rating": 4.7,
+              "price_level": 2,
+              "price": 10,
+              "duration_hours": 2,
+              "best_time": "Full Day",
+              "tags": [
+                "camp_site",
+                "",
+                "",
+                ""
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6125093358255855
+            },
+            {
+              "activity_id": "OSM12061155961",
+              "name": "Monumen Panji Sakti",
+              "type": "Historic Site",
+              "category": "cultural",
+              "description": "Historic Site in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.2309558,
+                  "lng": 115.1501212
+                }
+              },
+              "rating": 4.7,
+              "price_level": 2,
+              "price": 10,
+              "duration_hours": 2,
+              "best_time": "Afternoon",
+              "tags": [
+                "",
+                "",
+                "",
+                "monument"
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6125093358255855
+            },
+            {
+              "activity_id": "OSM5601204121",
+              "name": "Nice HomeStay",
+              "type": "Attraction",
+              "category": "cultural",
+              "description": "Attraction in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.1810504,
+                  "lng": 115.1880181
+                }
+              },
+              "rating": 4.6,
+              "price_level": 2,
+              "price": 10,
+              "duration_hours": 2,
+              "best_time": "Full Day",
+              "tags": [
+                "hostel",
+                "",
+                "",
+                ""
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6063970718975191
+            },
+            {
+              "activity_id": "OSM5853750587",
+              "name": "Above sky view",
+              "type": "Viewpoint",
+              "category": "nature",
+              "description": "Viewpoint in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.2559449,
+                  "lng": 115.1901248
+                }
+              },
+              "rating": 4.6,
+              "price_level": 2,
+              "price": 10,
+              "duration_hours": 1,
+              "best_time": "Afternoon",
+              "tags": [
+                "viewpoint",
+                "",
+                "",
+                ""
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6063970718975191
+            },
+            {
+              "activity_id": "OSM5853751385",
+              "name": "Campsite place",
+              "type": "Attraction",
+              "category": "cultural",
+              "description": "Attraction in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.2551824,
+                  "lng": 115.1900513
+                }
+              },
+              "rating": 4.6,
+              "price_level": 2,
+              "price": 10,
+              "duration_hours": 2,
+              "best_time": "Full Day",
+              "tags": [
+                "camp_site",
+                "",
+                "",
+                ""
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6063970718975191
+            },
+            {
+              "activity_id": "OSM12248424005",
+              "name": "Rice Terrace",
+              "type": "Viewpoint",
+              "category": "nature",
+              "description": "Viewpoint in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.18242,
+                  "lng": 115.1831819
+                }
+              },
+              "rating": 4.6,
+              "price_level": 2,
+              "price": 10,
+              "duration_hours": 1,
+              "best_time": "Full Day",
+              "tags": [
+                "viewpoint",
+                "",
+                "",
+                ""
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6063970718975191
+            },
+            {
+              "activity_id": "OSM5273128322",
+              "name": "Handara Gate",
+              "type": "Historic Site",
+              "category": "cultural",
+              "description": "Historic Site in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.2530654,
+                  "lng": 115.1583197
+                }
+              },
+              "rating": 4.5,
+              "price_level": 2,
+              "price": 25,
+              "duration_hours": 2,
+              "best_time": "Morning",
+              "tags": [
+                "",
+                "",
+                "",
+                "monument"
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6002668598376246
+            },
+            {
+              "activity_id": "OSM5052509468",
+              "name": "Hillside Guest House",
+              "type": "Attraction",
+              "category": "cultural",
+              "description": "Attraction in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.2091807,
+                  "lng": 115.1718503
+                }
+              },
+              "rating": 4.4,
+              "price_level": 2,
+              "price": 25,
+              "duration_hours": 2,
+              "best_time": "Morning",
+              "tags": [
+                "guest_house",
+                "",
+                "",
+                ""
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.5941174200069459
+            },
+            {
+              "activity_id": "OSM7221564786",
+              "name": "Donk losog bedugul",
+              "type": "Attraction",
+              "category": "cultural",
+              "description": "Attraction in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.2737157,
+                  "lng": 115.1608651
+                }
+              },
+              "rating": 4.4,
+              "price_level": 2,
+              "price": 25,
+              "duration_hours": 2,
+              "best_time": "Afternoon",
+              "tags": [
+                "camp_site",
+                "",
+                "",
+                ""
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.5941174200069459
+            }
+          ]
+        },
+        "comfort_level": "standard",
+        "value_score": 76.88,
+        "label": "Standard",
+        "description": "Balance between cost and comfort"
+      },
+      {
+        "total_budget": 2500,
+        "total_cost": 1845.3676470588234,
+        "balance": 654.6323529411766,
+        "allocation": {
+          "transport": 1029.4117647058824,
+          "accommodation": 1029.4117647058824,
+          "food": 220.58823529411765,
+          "activities": 147.05882352941177,
+          "miscellaneous": 73.52941176470588
+        },
+        "actual_costs": {
+          "transport": 770.0,
+          "accommodation": 656.25,
+          "activities": 125,
+          "food": 220.58823529411765,
+          "miscellaneous": 73.52941176470588
+        },
+        "selected_options": {
+          "flight": {
+            "flight_id": "MOCK-UNI-2",
+            "airline": "United Airlines",
+            "airline_logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/United_Airlines_Logo.svg/512px-United_Airlines_Logo.svg.png",
+            "price": 770.0,
+            "total_price": 770.0,
+            "data_source": "mock",
+            "fallback_reason": "serp_api_unavailable_or_empty",
+            "travel_class": "Standard",
+            "carbon_emissions": 855,
+            "booking_url": "",
+            "outbound": {
+              "date": "2025-12-01",
+              "airline": "United Airlines",
+              "flight_number": "UN465",
+              "duration_hours": 8.0,
+              "stops": 1,
+              "departure": {
+                "airport": "JFK",
+                "time": "12:20"
+              },
+              "arrival": {
+                "airport": "DPS",
+                "time": "20:05"
+              },
+              "layovers": [
+                "Reykjavik"
+              ]
+            },
+            "return": {
+              "date": "2025-12-06",
+              "airline": "United Airlines",
+              "flight_number": "UN786",
+              "duration_hours": 8.4,
+              "stops": 1,
+              "departure": {
+                "airport": "DPS",
+                "time": "14:35"
+              },
+              "arrival": {
+                "airport": "JFK",
+                "time": "23:10"
+              },
+              "layovers": [
+                "Dublin"
+              ]
+            },
+            "value_score": 0.8479999999999999
+          },
+          "hotel": {
+            "name": "Traveler's Loft",
+            "rating": 3.9,
+            "data_source": "mock",
+            "type": "Hotel",
+            "location": {
+              "address": "Bali, Indonesia City Center",
+              "coordinates": {
+                "lat": 0.0,
+                "lng": 0.0
+              }
+            },
+            "room_type": "Queen with breakfast",
+            "price": {
+              "per_night": 131.25,
+              "total": 656.25,
+              "nights": 5,
+              "currency": "USD"
+            },
+            "amenities": [
+              "WiFi",
+              "Breakfast",
+              "Late Checkout",
+              "Gym"
+            ],
+            "policies": {
+              "cancellation": "Free cancellation up to 24h before check-in"
+            },
+            "value_score": 6.11764705882353
+          },
+          "activities": [
+            {
+              "activity_id": "OSM6114569750",
+              "name": "D' Alas Ekowisata",
+              "type": "Viewpoint",
+              "category": "nature",
+              "description": "Viewpoint in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.256995,
+                  "lng": 115.2275379
+                }
+              },
+              "rating": 4.8,
+              "price_level": 2,
+              "price": 15,
+              "duration_hours": 1,
+              "best_time": "Afternoon",
+              "tags": [
+                "viewpoint",
+                "",
+                "",
+                ""
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6186048555652885
+            },
+            {
+              "activity_id": "OSM9429846867",
+              "name": "Cok Camp",
+              "type": "Attraction",
+              "category": "cultural",
+              "description": "Attraction in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.2636978,
+                  "lng": 115.1784382
+                }
+              },
+              "rating": 4.7,
+              "price_level": 2,
+              "price": 10,
+              "duration_hours": 2,
+              "best_time": "Full Day",
+              "tags": [
+                "camp_site",
+                "",
+                "",
+                ""
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6125093358255855
+            },
+            {
+              "activity_id": "OSM12061155961",
+              "name": "Monumen Panji Sakti",
+              "type": "Historic Site",
+              "category": "cultural",
+              "description": "Historic Site in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.2309558,
+                  "lng": 115.1501212
+                }
+              },
+              "rating": 4.7,
+              "price_level": 2,
+              "price": 10,
+              "duration_hours": 2,
+              "best_time": "Afternoon",
+              "tags": [
+                "",
+                "",
+                "",
+                "monument"
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6125093358255855
+            },
+            {
+              "activity_id": "OSM5601204121",
+              "name": "Nice HomeStay",
+              "type": "Attraction",
+              "category": "cultural",
+              "description": "Attraction in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.1810504,
+                  "lng": 115.1880181
+                }
+              },
+              "rating": 4.6,
+              "price_level": 2,
+              "price": 10,
+              "duration_hours": 2,
+              "best_time": "Full Day",
+              "tags": [
+                "hostel",
+                "",
+                "",
+                ""
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6063970718975191
+            },
+            {
+              "activity_id": "OSM5853750587",
+              "name": "Above sky view",
+              "type": "Viewpoint",
+              "category": "nature",
+              "description": "Viewpoint in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.2559449,
+                  "lng": 115.1901248
+                }
+              },
+              "rating": 4.6,
+              "price_level": 2,
+              "price": 10,
+              "duration_hours": 1,
+              "best_time": "Afternoon",
+              "tags": [
+                "viewpoint",
+                "",
+                "",
+                ""
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6063970718975191
+            },
+            {
+              "activity_id": "OSM5853751385",
+              "name": "Campsite place",
+              "type": "Attraction",
+              "category": "cultural",
+              "description": "Attraction in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.2551824,
+                  "lng": 115.1900513
+                }
+              },
+              "rating": 4.6,
+              "price_level": 2,
+              "price": 10,
+              "duration_hours": 2,
+              "best_time": "Full Day",
+              "tags": [
+                "camp_site",
+                "",
+                "",
+                ""
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6063970718975191
+            },
+            {
+              "activity_id": "OSM12248424005",
+              "name": "Rice Terrace",
+              "type": "Viewpoint",
+              "category": "nature",
+              "description": "Viewpoint in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.18242,
+                  "lng": 115.1831819
+                }
+              },
+              "rating": 4.6,
+              "price_level": 2,
+              "price": 10,
+              "duration_hours": 1,
+              "best_time": "Full Day",
+              "tags": [
+                "viewpoint",
+                "",
+                "",
+                ""
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6063970718975191
+            },
+            {
+              "activity_id": "OSM5273128322",
+              "name": "Handara Gate",
+              "type": "Historic Site",
+              "category": "cultural",
+              "description": "Historic Site in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.2530654,
+                  "lng": 115.1583197
+                }
+              },
+              "rating": 4.5,
+              "price_level": 2,
+              "price": 25,
+              "duration_hours": 2,
+              "best_time": "Morning",
+              "tags": [
+                "",
+                "",
+                "",
+                "monument"
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.6002668598376246
+            },
+            {
+              "activity_id": "OSM5052509468",
+              "name": "Hillside Guest House",
+              "type": "Attraction",
+              "category": "cultural",
+              "description": "Attraction in Bali, Indonesia.",
+              "location": {
+                "address": "Bali, Indonesia",
+                "coordinates": {
+                  "lat": -8.2091807,
+                  "lng": 115.1718503
+                }
+              },
+              "rating": 4.4,
+              "price_level": 2,
+              "price": 25,
+              "duration_hours": 2,
+              "best_time": "Morning",
+              "tags": [
+                "guest_house",
+                "",
+                "",
+                ""
+              ],
+              "website": "",
+              "wikipedia": "",
+              "photos": [],
+              "personalization_score": 0.5941174200069459
+            }
+          ]
+        },
+        "comfort_level": "comfort",
+        "value_score": 74.41,
+        "label": "Comfort",
+        "description": "Premium experience with better amenities"
+      }
+    ],
+    "intent": {
+      "trip_type": "adventure",
+      "primary_goal": "adventure",
+      "flexibility": {
+        "dates": true,
+        "budget": false,
+        "destination": false,
+        "accommodation": true,
+        "activities": true
+      },
+      "priorities": [
+        "value",
+        "location",
+        "comfort",
+        "price",
+        "amenities"
+      ],
+      "constraints": {
+        "dates": {
+          "start": "2025-12-01",
+          "end": "2025-12-06"
+        },
+        "budget": {
+          "total": 2500,
+          "currency": "USD"
+        },
+        "group_size": 2,
+        "special": {
+          "max_flight_duration": 20,
+          "preferred_airlines": [],
+          "hotel_rating_min": 3.5,
+          "flexible_dates": true
+        },
+        "preferences": {
+          "categories": [
+            "adventure",
+            "nature",
+            "cultural"
+          ],
+          "accommodation_type": "hotel",
+          "comfort_level": "standard",
+          "dietary_restrictions": [],
+          "special_requirements": []
+        }
+      },
+      "parsed_at": "2025-11-28T00:19:28.443618"
+    },
+    "pdf_path": "output/itineraries/ITN-20251128001932.pdf",
+    "calendar_path": "output/itineraries/ITN-20251128001932.ics",
+    "processing_time": 3.9915640354156494
+  }
+}

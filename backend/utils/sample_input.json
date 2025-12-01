@@ -1,0 +1,46 @@
+{
+  "user_id": "user_12345",
+  "query": "Plan a 5-day adventure trip to Bali",
+  "destination": "Bali, Indonesia",
+  "origin": "New York, USA",
+  "dates": {
+    "start": "2025-12-01",
+    "end": "2025-12-06"
+  },
+  "budget": {
+    "total": 2500,
+    "currency": "USD"
+  },
+  "group_size": 2,
+  "preferences": {
+    "categories": [
+      "adventure",
+      "nature",
+      "cultural"
+    ],
+    "accommodation_type": "hotel",
+    "comfort_level": "standard",
+    "dietary_restrictions": [],
+    "special_requirements": []
+  },
+  "constraints": {
+    "max_flight_duration": 20,
+    "preferred_airlines": [],
+    "hotel_rating_min": 3.5,
+    "flexible_dates": true
+  },
+  "user_history": {
+    "previous_trips": [
+      {
+        "destination": "Thailand",
+        "satisfaction": 4.5,
+        "preferences": ["cultural", "food"]
+      },
+      {
+        "destination": "Costa Rica",
+        "satisfaction": 5.0,
+        "preferences": ["adventure", "nature"]
+      }
+    ]
+  }
+}
