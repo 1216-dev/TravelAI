@@ -14,6 +14,7 @@ The backend is architected as a sequential pipeline of agents, orchestrated by a
 
 This diagram illustrates the end-to-end process, from receiving a user request to returning a fully-formed itinerary.
 
+```mermaid
 graph TD
     A[User Request] --> B{Orchestrator Agent};
     B -- Validate & Parse Intent --> C{API Manager};
@@ -36,6 +37,7 @@ graph TD
     style F fill:#e3f2fd,stroke:#333,stroke-width:2px
     style G fill:#e3f2fd,stroke:#333,stroke-width:2px
     style J fill:#fff9c4,stroke:#333,stroke-width:2px
+```
 
 ### 2.2. Agent Communication & Data Contracts
 
