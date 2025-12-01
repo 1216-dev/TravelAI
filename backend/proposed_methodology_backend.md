@@ -16,28 +16,27 @@ This diagram illustrates the end-to-end process, from receiving a user request t
 
 ```mermaid
 graph TD
-    A[User Request] --> B{Orchestrator Agent};
-    B -- Validate & Parse Intent --> C{API Manager};
-    C -- Fetch Real-Time Data --> D[External APIs <br> (Flights, Hotels, Activities)];
-    D --> C;
-    C -- Raw Travel Options --> E{Personalization GNN Agent};
-    E -- Ranked & Scored Options --> F{Budget Optimizer};
-    F -- Optimized Selections --> G{Itinerary Agent};
-    G -- Generate Documents --> H[Final Output <br> (JSON, PDF, ICS)];
-    H --> I[User];
-
-    subgraph "Data & AI Core"
-        E --> J[Neo4j Graph Database];
-        J --> E;
+    A[User Interacts with UI <br/>(app.py)] --> B{Sidebar Form};
+    B -- Fill & Submit --> C{Build Request Object};
+    C -- Dict --> D[process_travel_request() function];
+    D -- Instantiate & Call --> E{Backend: TravelPlannerPipeline};
+    E -- Progress Callback --> F[update_progress() function];
+    F -- Update UI --> G[Progress Bar & Status Text];
+    E -- Return Result --> H{Store in Session State <br/>(st.session_state.result)};
+    H -- Data --> I{Render Results View};
+    
+    subgraph "UI Components (components/)"
+        I --> J[itinerary_display.py];
+        I --> K[pdf_download.py];
+        I --> L[feedback_form.py];
     end
 
     style B fill:#e3f2fd,stroke:#333,stroke-width:2px
-    style C fill:#e3f2fd,stroke:#333,stroke-width:2px
-    style E fill:#e3f2fd,stroke:#333,stroke-width:2px
-    style F fill:#e3f2fd,stroke:#333,stroke-width:2px
-    style G fill:#e3f2fd,stroke:#333,stroke-width:2px
-    style J fill:#fff9c4,stroke:#333,stroke-width:2px
+    style D fill:#e3f2fd,stroke:#333,stroke-width:2px
+    style E fill:#c8e6c9,stroke:#333,stroke-width:2px
+    style H fill:#fff9c4,stroke:#333,stroke-width:2px
 ```
+---
 
 ### 2.2. Agent Communication & Data Contracts
 
