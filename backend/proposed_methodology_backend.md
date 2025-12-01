@@ -12,31 +12,53 @@ The backend is architected as a sequential pipeline of agents, orchestrated by a
 
 ### 2.1. High-Level Architectural Flowchart
 
-This diagram illustrates the end-to-end process, from receiving a user request to returning a fully-formed itinerary.
+Step 1: Request Initialization and Parsing (Orchestrator Agent)
 
-```mermaid
-graph TD
-    A[User Interacts with UI <br/>(app.py)] --> B{Sidebar Form};
-    B -- Fill & Submit --> C{Build Request Object};
-    C -- Dict --> D[process_travel_request() function];
-    D -- Instantiate & Call --> E{Backend: TravelPlannerPipeline};
-    E -- Progress Callback --> F[update_progress() function];
-    F -- Update UI --> G[Progress Bar & Status Text];
-    E -- Return Result --> H{Store in Session State <br/>(st.session_state.result)};
-    H -- Data --> I{Render Results View};
-    
-    subgraph "UI Components (components/)"
-        I --> J[itinerary_display.py];
-        I --> K[pdf_download.py];
-        I --> L[feedback_form.py];
-    end
+    A [User Request] enters the system.
 
-    style B fill:#e3f2fd,stroke:#333,stroke-width:2px
-    style D fill:#e3f2fd,stroke:#333,stroke-width:2px
-    style E fill:#c8e6c9,stroke:#333,stroke-width:2px
-    style H fill:#fff9c4,stroke:#333,stroke-width:2px
-```
----
+    The B {Orchestrator Agent} receives the request.
+
+    The Orchestrator validates the request parameters and parses the user's travel intent (e.g., dates, destination, trip type).
+
+    The validated intent and workflow instructions are passed to the C {API Manager}.
+
+Step 2: Data Acquisition (API Manager)
+
+    The C {API Manager} uses the intent to initiate external requests for real-time data.
+
+    The API Manager interacts with D [External APIs (Flights, Hotels, Activities)] to Fetch Real-Time Data.
+
+    The External APIs return the raw data back to the API Manager.
+
+    The API Manager standardizes and passes the Raw Travel Options to the next stage.
+
+Step 3: Personalization and Ranking (GNN Agent & Data Core)
+
+    The E {Personalization GNN Agent} receives the raw options.
+
+    The GNN Agent queries the J [Neo4j Graph Database] for the user's historical data, preferences, and community clusters.
+
+    The Neo4j database returns the graph data needed for the GNN model inference.
+
+    The GNN model calculates a personalized score for each option and passes the Ranked & Scored Options to the optimizer.
+
+Step 4: Constrained Optimization (Budget Optimizer)
+
+    The F {Budget Optimizer} receives the ranked options and the user's total budget.
+
+    It solves a constrained optimization problem (e.g., a form of the Knapsack Problem for activities) to select the highest-value options that meet all financial and value requirements.
+
+    The optimizer generates the Optimized Selections (the single chosen flight, hotel, and list of activities).
+
+Step 5: Itinerary Generation and Final Output (Itinerary Agent)
+
+    The G {Itinerary Agent} receives the optimized selections.
+
+    The agent assembles the components into a coherent daily schedule and executes document generation tasks.
+
+    The agent outputs the H [Final Output (JSON, PDF, ICS)] documents.
+
+    The final output is delivered back to the I [User].
 
 ### 2.2. Agent Communication & Data Contracts
 
